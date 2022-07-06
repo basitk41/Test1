@@ -4,10 +4,7 @@ let y = 20;
 console.log('Before the swap');
 console.log('A = ',x);
 console.log('B = ',y);
-let z;
-x = z; // now c = 10,a = 10 and b = 20
-z = y; // now c = 10,a = 20 and b = 20
-y = x; // now c = 10,a = 10 and b = 10
+[x,y] = [y,x];
 console.log('After  swapping');
 console.log('A = ',x);
 console.log('B = ',y);
