@@ -43,7 +43,7 @@
 // console.log(stack);
 
 let x = [1,2,3,4,5,6];
-let n = new Array;
+let n = [];
 for(let i = x.length-1;i>=0;i--){
   n[n.length] = x[i];
 }
