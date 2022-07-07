@@ -40,13 +40,31 @@
 // console.log(pop());
 // console.log(pop());
 // console.log(pop());
+
 // console.log(stack);
 
-let x = [1,2,3,4,5,6];
-console.log('orignal',x);
-let n = [];
-for(let i = x.length-1;i>=0;i--){
-  n[n.length] = x[i];
+let orignal = [1,22,315,415221,59182,612];
+
+let reverse = [];
+for(let i = orignal.length-1;i>=0;i--){
+  reverse[reverse.length] = orignal[i];
 }
 
-console.log('reverse',n);
+function queueDel(){
+  if(reverse.length===0){
+    return'Sorry nothing more to delete';
+  } 
+  let popped = reverse[reverse.length-1];
+  reverse.length--;
+  return popped;
+}
+
+
+
+console.log('Popped',queueDel());
+console.log('Popped',queueDel());
+console.log('Popped',queueDel());
+console.log('Popped',queueDel());
+console.log('Popped',queueDel());
+console.log('Popped',queueDel());
+// console.log('reverse',reverse);
