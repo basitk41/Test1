@@ -1,4 +1,4 @@
-// Exercise No 1 (swapping of two values) //
+// Exercise No 1 (swapping of two values) ///
 let x = 10;
 let y = 20;
 console.log("Before the swap");
