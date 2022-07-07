@@ -18,10 +18,26 @@
 // console.log(checkAge(12));
 
 /////////////////////////////////////////////
-// stack => FILO
+// stack => FILO => OIFO
 // queue => FIFO
 
 // length => stack.length
 const stack = [];
-const push = (value) => {};
-const pop = () => {};
+const push = (value) => {
+  stack[stack.length] = value;
+};
+const pop = () => {
+  if (stack.length === 0) return "stack is empty!";
+  const el = stack[stack.length - 1];
+  stack.length--;
+  return el;
+};
+push(1);
+push(2);
+push(3);
+console.log(stack);
+console.log(pop());
+console.log(pop());
+console.log(pop());
+console.log(pop());
+console.log(stack);
