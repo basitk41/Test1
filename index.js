@@ -60,11 +60,12 @@ function queueDel(){
 }
 
 
-
-console.log('Popped',queueDel());
-console.log('Popped',queueDel());
-console.log('Popped',queueDel());
-console.log('Popped',queueDel());
-console.log('Popped',queueDel());
 console.log('Popped',queueDel());
 // console.log('reverse',reverse);
+console.log(reverse);
+let orignal_2 = [];
+for(let i = reverse.length-1;i>=0;i--){
+  orignal_2[orignal_2.length] = reverse[i];
+}
+
+console.log(orignal_2);
