@@ -69,10 +69,10 @@
 // }
 
 // console.log(orignal_2);
-
+// ____________________________________ //
 // let arr = [3, 6, -2, -5, 7, 3];
 // function findGreatest(parm)  {
-//     let p = 0;
+//     let p = -Infinty;
 //     for  (let  i  =   0 ; i < arr.length - 1; i++) {
 //         let sum = arr[i] * arr[ i + 1];
 //         if  ( p  < sum) {
@@ -85,7 +85,7 @@
 // let c = findGreatest(arr);
 // console.log(c);
 
-// // ____________________________________ //
+// ____________________________________ //
 
 // let n = 5;
 // let string = "";
