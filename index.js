@@ -70,34 +70,52 @@
 
 // console.log(orignal_2);
 
-let arr = [3, 6, -2, -5, 7, 3];
-function findGreatest(parm)  {
-    let p = 0;
-    for  (let  i  =   0 ; i < arr.length - 1; i++) {
-        let sum = arr[i] * arr[ i + 1];
-        if  ( p  < sum) {
-            p = sum;
-        }
+// let arr = [3, 6, -2, -5, 7, 3];
+// function findGreatest(parm)  {
+//     let p = 0;
+//     for  (let  i  =   0 ; i < arr.length - 1; i++) {
+//         let sum = arr[i] * arr[ i + 1];
+//         if  ( p  < sum) {
+//             p = sum;
+//         }
+//     }
+//     return p;
+// }
+
+// let c = findGreatest(arr);
+// console.log(c);
+
+// // ____________________________________ //
+
+// let n = 5;
+// let string = "";
+// let temp = 1;
+// for (let i = 1; i <= n; i++) {
+//       for (let j = 1; j <= n - i; j++) {
+//             string += ".";
+//       }
+//       for (let k = 0; k <   2   * i - 1; k++) {
+//             string += temp;
+//       }
+//       temp++;
+//       string += "\n";
+// }
+// console.log(string);
+// ------------------------- //
+
+function arrayCombine(ar1,ar2){
+    let combine = [];
+    let size1 = ar1.length-1;
+    let size2 = ar2.length-1;
+    for(let i=0;i<=size1;i++){
+        combine[combine.length] = ar1[i];
     }
-    return p;
+    
+    for(let j=0;j<=size2;j++){
+        combine[combine.length] = ar2[j];
+    }
+    return combine;
 }
+const call = arrayCombine([1,2,3],[4,5,6]);
 
-let c = findGreatest(arr);
-console.log(c);
-
-// ____________________________________ //
-
-let n = 5;
-let string = "";
-let temp = 1;
-for (let i = 1; i <= n; i++) {
-      for (let j = 1; j <= n - i; j++) {
-            string += ".";
-      }
-      for (let k = 0; k <   2   * i - 1; k++) {
-            string += temp;
-      }
-      temp++;
-      string += "\n";
-}
-console.log(string);
+console.log(call);
