@@ -43,29 +43,29 @@
 
 // console.log(stack);
 
-let orignal = [1,22,315,415221,59182,612];
+// let orignal = [1,22,315,415221,59182,612];
 
-let reverse = [];
-for(let i = orignal.length-1;i>=0;i--){
-  reverse[reverse.length] = orignal[i];
-}
+// let reverse = [];
+// for(let i = orignal.length-1;i>=0;i--){
+//   reverse[reverse.length] = orignal[i];
+// }
 
-function queueDel(){
-  if(reverse.length===0){
-    return'Sorry nothing more to delete';
-  } 
-  let popped = reverse[reverse.length-1];
-  reverse.length--;
-  return popped;
-}
+// function queueDel(){
+//   if(reverse.length===0){
+//     return'Sorry nothing more to delete';
+//   } 
+//   let popped = reverse[reverse.length-1];
+//   reverse.length--;
+//   return popped;
+// }
 
 
-console.log('Popped',queueDel());
-// console.log('reverse',reverse);
-console.log(reverse);
-let orignal_2 = [];
-for(let i = reverse.length-1;i>=0;i--){
-  orignal_2[orignal_2.length] = reverse[i];
-}
+// console.log('Popped',queueDel());
+// // console.log('reverse',reverse);
+// console.log(reverse);
+// let orignal_2 = [];
+// for(let i = reverse.length-1;i>=0;i--){
+//   orignal_2[orignal_2.length] = reverse[i];
+// }
 
-console.log(orignal_2);
+// console.log(orignal_2);
