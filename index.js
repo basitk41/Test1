@@ -69,3 +69,35 @@
 // }
 
 // console.log(orignal_2);
+
+let arr = [3, 6, -2, -5, 7, 3];
+function findGreatest(parm)  {
+    let p = 0;
+    for  (let  i  =   0 ; i < arr. l en gth  - 1; i++) {
+        let sum = arr[i]   * arr [ i + 1];
+        if  ( p  < s um) {
+            p = sum;
+        }
+    }
+    return p;
+}
+
+let c = findGreatest(arr);
+console.log(c);
+
+// ____________________________________ //
+
+let n = 5;
+let string = "";
+let temp = 1;
+for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= n - i; j++) {
+            string += ".";
+      }
+      for (let k = 0; k <   2   * i - 1; k++) {
+            string += temp;
+      }
+      temp++;
+      string += "\n";
+}
+console.log(string);
