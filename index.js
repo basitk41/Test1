@@ -73,7 +73,7 @@
 let arr = [3, 6, -2, -5, 7, 3];
 function findGreatest(parm)  {
     let p = 0;
-    for  (let  i  =   0 ; i < arr. l en gth  - 1; i++) {
+    for  (let  i  =   0 ; i < arr.length  - 1; i++) {
         let sum = arr[i]   * arr [ i + 1];
         if  ( p  < s um) {
             p = sum;
