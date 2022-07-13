@@ -69,7 +69,7 @@
 // }
 
 // console.log(orignal_2);
-
+// // ____________________________________ // find the greatest product 
 // let arr = [3, 6, -2, -5, 7, 3];
 // function findGreatest(parm)  {
 //     let p = 0;
