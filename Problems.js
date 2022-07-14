@@ -45,6 +45,7 @@
 //     return p;
 // }
 
+
 // let c = findGreatest(arr);
 // console.log(c);
 
@@ -190,7 +191,33 @@
 //     if(avrg >= 90 && avrg <= 100){
 //         grade = 'A';
 //     }
-//     return grade;
+//     return grade; 
 // }
 
 // console.log(calculateGrade(grades));
+
+// ----------------------------- //
+// let string = "";
+// for (let i = 0; i < 5; i++) {
+//    for (let j = 0; j <= i; j++) {
+//         string += '*';
+//    }
+//    for (let k = 0; k <= i-1; k++) {
+//         string += ' ';
+//    }
+//    string += '\n';
+// }
+// console.log(string);
+// ----------------------------------- //
+// let string2 = "";
+// for (let i = 0; i < 5; i++) {
+//    for (let j = 0; j < 5-i; j++) {
+//         string2 += '*';
+//    }
+//    for (let k = 0; k <= i; k++) {
+//         string2 += ' ';
+//    }
+//    string2 += '\n';
+// }
+
+// console.log(string2);
