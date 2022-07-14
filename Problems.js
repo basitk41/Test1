@@ -214,7 +214,7 @@
 //    for (let j = 0; j < 5-i; j++) {
 //         string2 += '*';
 //    }
-//    for (let k = 0; k <= i; k++) {
+//    for (let k = 0; k < i; k++) {
 //         string2 += ' ';
 //    }
 //    string2 += '\n';
