@@ -35,7 +35,7 @@
 // Exercise 27
 // let arr = [3, 6, -2, -5, 7, 3];
 // function findGreatest(parm)  {
-//     let p = -Infinty;
+//     let p = -Infinity;
 //     for  (let  i  =   0 ; i < arr.length - 1; i++) {
 //         let sum = arr[i] * arr[ i + 1];
 //         if  ( p  < sum) {
@@ -163,3 +163,34 @@
 
 // let call = sum(12);
 // console.log(call);
+// -------------------------------- //
+// Exercise 11
+// let grades = [90,90,90];
+// const calculateGrade = function(marks){
+//     let subjects = marks.length;
+//     let obtainedMarks = 0;
+//     let grade;
+//     for(let i=0;i<marks.length;i++){
+//         obtainedMarks += marks[i];
+//     }
+//     let avrg = obtainedMarks/subjects;
+//     // return avrg;
+//     if(avrg<=59){
+//          grade = 'F';
+//     }
+//     if(avrg >= 60 && avrg <= 69){
+//         grade = 'D';
+//     }
+//     if(avrg >= 70 && avrg <= 79){
+//         grade = 'C';
+//     }
+//     if(avrg >= 80 && avrg <= 89){
+//         grade = 'B';
+//     }
+//     if(avrg >= 90 && avrg <= 100){
+//         grade = 'A';
+//     }
+//     return grade;
+// }
+
+// console.log(calculateGrade(grades));
