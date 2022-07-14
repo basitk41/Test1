@@ -35,7 +35,7 @@
 // Exercise 27
 // let arr = [3, 6, -2, -5, 7, 3];
 // function findGreatest(parm)  {
-//     let p = -Infinty;
+//     let p = -Infinity;
 //     for  (let  i  =   0 ; i < arr.length - 1; i++) {
 //         let sum = arr[i] * arr[ i + 1];
 //         if  ( p  < sum) {
