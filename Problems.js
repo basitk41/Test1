@@ -316,3 +316,14 @@
 // let holder = checkSpeed(130);
 // console.log(holder);
 // __________________________________________ //
+// Exercise 8
+// find truthy value in array
+let arr = [false, 0, -0, "", null, undefined, "Healer", true, 2, {}];
+function countTruthy(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i]) {
+      console.log("Truthy:", array[i]);
+    }
+  }
+}
+countTruthy(arr);
