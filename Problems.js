@@ -313,5 +313,5 @@ const checkSpeed = function (speed) {
   return dirverPoints;
 };
 
-let holder = checkSpeed(130);
+let holder = checkSpeed(120);
 console.log(holder);
