@@ -295,23 +295,23 @@
 // --------------------------------- //
 // Exercise 6
 // checkspeed
-let dirverPoints = 0;
-const checkSpeed = function (speed) {
-  if (speed <= 70) {
-    console.log("OK");
-  }
-  if (speed > 70) {
-    let i = 75;
-    while (i <= speed) {
-      dirverPoints += 1;
-      if (dirverPoints >= 12) {
-        return `your license is suspended your maximum points reached ${dirverPoints}`;
-      }
-      i += 5;
-    }
-  }
-  return dirverPoints;
-};
+// let dirverPoints = 0;
+// const checkSpeed = function (speed) {
+//   if (speed <= 70) {
+//     console.log("OK");
+//   }
+//   if (speed > 70) {
+//     let i = 75;
+//     while (i <= speed) {
+//       dirverPoints += 1;
+//       if (dirverPoints >= 12) {
+//         return `your license is suspended your maximum points reached ${dirverPoints}`;
+//       }
+//       i += 5;
+//     }
+//   }
+//   return dirverPoints;
+// };
 
-let holder = checkSpeed(120);
-console.log(holder);
+// let holder = checkSpeed(130);
+// console.log(holder);
