@@ -222,3 +222,39 @@
 // }
 
 // console.log(string2);
+// -----------------------------//
+// Calculate mass of earth
+// Exercise 2.3
+// M=gR2/G Formula
+// g = 9.8
+// r = 6.37 * 10 ^ 6
+// G =  6.673 * 10 ^ -11
+
+// let massOfEarth;
+// const g = 9.8;
+// const r = 6.37*Math.pow(10,6);
+// const G = 6.673*Math.pow(10,-11);
+// massOfEarth = g*Math.pow(r,2)/G;
+// console.log(massOfEarth);
+
+// ---------------------------------------- //
+// Exercise 21
+// ----------------Used Recursive function
+// let size,temp=0,num = 9999999999999;
+// function single(params) {
+//     params = params.toString();
+//     size = params.length;
+//     temp = 0;
+//     for(let i=0;i<size;i++){
+//         temp = temp + parseInt(params[i]);
+//     }
+//     temp = temp.toString();
+//     size = temp.length;
+//     if(size > 1){
+//         single(temp);
+//     }
+// return temp;
+// }
+
+// let x = single(num);
+// console.log(x);
