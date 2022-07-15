@@ -239,7 +239,7 @@
 
 // ---------------------------------------- //
 // Exercise 21
-// ----------------Used Recursive function
+// ---------------- Used Recursive function for the first time
 // let size,temp=0,num = 9999999999999;
 // function single(params) {
 //     params = params.toString();
@@ -258,3 +258,26 @@
 
 // let x = single(num);
 // console.log(x);
+// --------------------------- //
+// Exercise 23
+// Reverse and array or a string
+// let myArray = [1,2,3];
+// let rev = [];
+// const size  = myArray.length-1;
+// for(let i=size;i>=0;i--){
+//     rev[rev.length] = myArray[i];
+// }
+// console.log('Orignal Array:',myArray);
+// console.log('Reversed:',rev);
+
+// for string
+// let str = 'HEALER';
+// let rev_str = '';
+// let strSize = str.length-1;
+// for(let i=strSize;i>=0;i--){
+//     rev_str += str[i];
+// }
+// console.log('Orignal Array:',str);
+// console.log('Reversed:',rev_str);
+
+// -------------------------- //
