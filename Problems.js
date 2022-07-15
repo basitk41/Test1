@@ -45,7 +45,6 @@
 //     return p;
 // }
 
-
 // let c = findGreatest(arr);
 // console.log(c);
 
@@ -76,7 +75,7 @@
 //     for(let i=0;i<=size1;i++){
 //         combine[combine.length] = ar1[i];
 //     }
-    
+
 //     for(let j=0;j<=size2;j++){
 //         combine[combine.length] = ar2[j];
 //     }
@@ -104,7 +103,7 @@
 //     }else{
 //         return 'Numbers are equal'
 //     }
-// }
+// };
 
 // let call = findMax(5,2);
 // console.log(call);
@@ -115,22 +114,22 @@
 //     let container;
 //     if(typeof input !== 'number'){
 //         return 'Not a number';
-//     }else{       
+//     }else{
 //         if(input % 3 === 0){
 //             container =  'fizz';
-//         } 
+//         }
 //         if (input % 5 === 0) {
 //             container =  'buzz'
 //         }
 //         if (input % 3 === 0 && input % 5 === 0) {
 //             container =  'fizzbuzz';
-//         } 
+//         }
 //         if(input % 3 !== 0 && input % 5 !== 0){
 //             container = 'Sorry the number is not divisible by 3 or 5';
 //         }
 //     }
 //     return container;
-// }
+// };
 
 // let holder = fizzbuzz(15);
 // console.log(holder);
@@ -144,7 +143,7 @@
 //             console.log(i,'is odd');
 //         }
 //     }
-// }
+// };
 
 // showNumbers(10);
 // ------------------------------ //
@@ -154,45 +153,45 @@
 //     for(let i=0;i<=limit;i++){
 //         if( i % 3 === 0){
 //             tempo += i;
-//         } 
+//         }
 //         if( i % 5 === 0){
 //             tempo += i;
 //         }
 //     }
 //     return tempo;
-// }
+// };
 
 // let call = sum(12);
 // console.log(call);
 // -------------------------------- //
 // Exercise 11
-// let grades = [90,90,90];
-// const calculateGrade = function(marks){
-//     let subjects = marks.length;
-//     let obtainedMarks = 0;
-//     let grade;
-//     for(let i=0;i<marks.length;i++){
-//         obtainedMarks += marks[i];
-//     }
-//     let avrg = obtainedMarks/subjects;
-//     // return avrg;
-//     if(avrg<=59){
-//          grade = 'F';
-//     }
-//     if(avrg >= 60 && avrg <= 69){
-//         grade = 'D';
-//     }
-//     if(avrg >= 70 && avrg <= 79){
-//         grade = 'C';
-//     }
-//     if(avrg >= 80 && avrg <= 89){
-//         grade = 'B';
-//     }
-//     if(avrg >= 90 && avrg <= 100){
-//         grade = 'A';
-//     }
-//     return grade; 
-// }
+// let grades = [90, 90, 90];
+// const calculateGrade = function (marks) {
+//   let subjects = marks.length;
+//   let obtainedMarks = 0;
+//   let grade;
+//   for (let i = 0; i < marks.length; i++) {
+//     obtainedMarks += marks[i];
+//   }
+//   let avrg = obtainedMarks / subjects;
+//   // return avrg;
+//   if (avrg <= 59) {
+//     grade = "F";
+//   }
+//   if (avrg >= 60 && avrg <= 69) {
+//     grade = "D";
+//   }
+//   if (avrg >= 70 && avrg <= 79) {
+//     grade = "C";
+//   }
+//   if (avrg >= 80 && avrg <= 89) {
+//     grade = "B";
+//   }
+//   if (avrg >= 90 && avrg <= 100) {
+//     grade = "A";
+//   }
+//   return grade;
+// };
 
 // console.log(calculateGrade(grades));
 
@@ -240,20 +239,22 @@
 // ---------------------------------------- //
 // Exercise 21
 // ---------------- Used Recursive function for the first time
-// let size,temp=0,num = 9999999999999;
+// let size,
+//   temp = 0,
+//   num = 9999999999999;
 // function single(params) {
-//     params = params.toString();
-//     size = params.length;
-//     temp = 0;
-//     for(let i=0;i<size;i++){
-//         temp = temp + parseInt(params[i]);
-//     }
-//     temp = temp.toString();
-//     size = temp.length;
-//     if(size > 1){
-//         single(temp);
-//     }
-// return temp;
+//   params = params.toString();
+//   size = params.length;
+//   temp = 0;
+//   for (let i = 0; i < size; i++) {
+//     temp = temp + parseInt(params[i]);
+//   }
+//   temp = temp.toString();
+//   size = temp.length;
+//   if (size > 1) {
+//     single(temp);
+//   }
+//   return temp;
 // }
 
 // let x = single(num);
@@ -279,5 +280,38 @@
 // }
 // console.log('Orignal Array:',str);
 // console.log('Reversed:',rev_str);
-
 // -------------------------- //
+// Exercise 4
+// landscape function
+// const isLandscape = function (width, height) {
+//   if (width > height) {
+//     return true;
+//   }
+//   return false;
+// };
+
+// let result = isLandscape(50, 10);
+// console.log(result);
+// --------------------------------- //
+// Exercise 6
+// checkspeed
+let dirverPoints = 0;
+const checkSpeed = function (speed) {
+  if (speed <= 70) {
+    console.log("OK");
+  }
+  if (speed > 70) {
+    let i = 75;
+    while (i <= speed) {
+      dirverPoints += 1;
+      if (dirverPoints >= 12) {
+        return `your license is suspended your maximum points reached ${dirverPoints}`;
+      }
+      i += 5;
+    }
+  }
+  return dirverPoints;
+};
+
+let holder = checkSpeed(130);
+console.log(holder);
