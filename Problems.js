@@ -206,15 +206,15 @@
 // }
 // console.log(string);
 // ----------------------------------- //
-let string2 = "";
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < 5 - i; j++) {
-    string2 += "*";
-  }
-  string2 += "\n";
-}
+// let string2 = "";
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; j < 5 - i; j++) {
+//     string2 += "*";
+//   }
+//   string2 += "\n";
+// }
 
-console.log(string2);
+// console.log(string2);
 // -----------------------------//
 // Calculate mass of earth
 // Exercise 2.3
@@ -235,9 +235,11 @@ console.log(string2);
 // ---------------- Used Recursive function for the first time
 // let size,
 //   temp = 0,
-//   num = 9999999999999;
+//   num = 88;
 // function single(params) {
 //   params = params.toString();
+//   //   params = 16
+//   // 01
 //   size = params.length;
 //   temp = 0;
 //   for (let i = 0; i < size; i++) {
@@ -252,6 +254,7 @@ console.log(string2);
 // }
 
 // let x = single(num);
+// x = parseInt(x);
 // console.log(x);
 // --------------------------- //
 // Exercise 23
