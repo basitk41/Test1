@@ -206,18 +206,15 @@
 // }
 // console.log(string);
 // ----------------------------------- //
-// let string2 = "";
-// for (let i = 0; i < 5; i++) {
-//    for (let j = 0; j < 5-i; j++) {
-//         string2 += '*';
-//    }
-//    for (let k = 0; k < i; k++) {
-//         string2 += ' ';
-//    }
-//    string2 += '\n';
-// }
+let string2 = "";
+for (let i = 0; i < 5; i++) {
+  for (let j = 0; j < 5 - i; j++) {
+    string2 += "*";
+  }
+  string2 += "\n";
+}
 
-// console.log(string2);
+console.log(string2);
 // -----------------------------//
 // Calculate mass of earth
 // Exercise 2.3
