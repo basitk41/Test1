@@ -482,3 +482,47 @@
 
 // let holder = main(array, userInput);
 // console.log(holder);
+// ----------------------------------------------- //
+// xoxoxo progoram
+// Exercise 20
+// let str = "kaxakakak";
+// let size = str.length;
+// let x = "";
+// let o = "";
+// function xoxoChecker(str) {
+//   for (let i = 0; i < size; i++) {
+//     if (str[i].toLowerCase() === "x") {
+//       x += str[i];
+//     } else if (str[i].toLowerCase() === "o") {
+//       o += str[i];
+//     }
+//   }
+//   if (x.length !== o.length) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+// let call = xoxoChecker(str);
+// console.log(call);
+// ------------------------------------------------- //
+// palindrome
+// Exercise 29
+// let str = "abaa",
+//   reverseText = "";
+// function checkPalindrome(text) {
+//   let size = text.length - 1;
+//   for (let i = size; i >= 0; i--) {
+//     reverseText += text[i];
+//   }
+//   if (text === reverseText) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// let call = checkPalindrome(str);
+// console.log(call);
+// ______________________________________________ //
