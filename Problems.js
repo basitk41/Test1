@@ -454,38 +454,31 @@
 // countTruthy(arr);
 // --------------------------------- //
 // array rotate
+// Exercise 25
 
-// function main(arr) {
-//   let last = arr.pop();
-//   arr.reverse();
-//   arr.push(last);
-//   arr.reverse();
-//   console.log(arr);
+// let popped,
+//   userInput = 3;
+// let array = [1, 2, 3, 4, 5, 6, 7];
+// let newArray = [];
+
+// function reverse(array) {
+//   let tempArr = [];
+//   for (let i = array.length - 1; i >= 0; i--) {
+//     tempArr[tempArr.length] = array[i];
+//   }
+//   return tempArr;
 // }
 
-let popped,
-  userInput = 3;
-let array = [1, 2, 3, 4, 5, 6, 7];
-let newArray = [];
+// function main(arr, n) {
+//   for (let i = 0; i < n; i++) {
+//     popped = arr[arr.length - 1];
+//     arr.length--;
+//     newArray = reverse(arr);
+//     newArray[newArray.length] = popped;
+//     arr = reverse(newArray);
+//   }
+//   return arr;
+// }
 
-function reverse(array) {
-  let tempArr = [];
-  for (let i = array.length - 1; i >= 0; i--) {
-    tempArr[tempArr.length] = array[i];
-  }
-  return tempArr;
-}
-
-function main(arr, n) {
-  for (let i = 0; i < n; i++) {
-    popped = arr[arr.length - 1];
-    arr.length--;
-    newArray = reverse(arr);
-    newArray[newArray.length] = popped;
-    arr = reverse(newArray);
-  }
-  return arr;
-}
-
-let holder = main(array, userInput);
-console.log(holder);
+// let holder = main(array, userInput);
+// console.log(holder);
