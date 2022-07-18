@@ -34,15 +34,15 @@
 // Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 // Exercise 27
 // let arr = [3, 6, -2, -5, 7, 3];
-// function findGreatest(parm)  {
-//     let p = -Infinity;
-//     for  (let  i  =   0 ; i < arr.length - 1; i++) {
-//         let sum = arr[i] * arr[ i + 1];
-//         if  ( p  < sum) {
-//             p = sum;
-//         }
+// function findGreatest(parm) {
+//   let p = -Infinity;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     let sum = arr[i] * arr[i + 1];
+//     if (p < sum) {
+//       p = sum;
 //     }
-//     return p;
+//   }
+//   return p;
 // }
 
 // let c = findGreatest(arr);
@@ -55,28 +55,58 @@
 // let string = "";
 // let temp = 1;
 // for (let i = 1; i <= n; i++) {
-//       for (let j = 1; j <= n - i; j++) {
-//             string += ".";
-//       }
-//       for (let k = 0; k <   2   * i - 1; k++) {
-//             string += temp;
-//       }
-//       temp++;
-//       string += "\n";
+//   for (let j = 1; j <= n - i; j++) {
+//     string += ".";
+//   }
+//   for (let k = 1; k <= i; k++) {
+//     string += temp;
+//   }
+//   temp++;
+//   string += "\n";
 // }
 // console.log(string);
+// const getStr = (curNum, n) => {
+//   //   switch (curNum) {
+//   //     case 1:
+//   //       return "....1";
+//   //     case 2:
+//   //       return "...22";
+//   //     case 3:
+//   //       return "..333";
+//   //     case 4:
+//   //       return ".4444";
+//   //     case 5:
+//   //       return "55555";
+//   //     default:
+//   //       return "";
+//   //   }
+//   let str = "";
+//   for (let i = 1; i <= n - curNum; i++) {
+//     str += ".";
+//   }
+//   for (let j = 1; j <= curNum; j++) {
+//     str += curNum;
+//   }
+//   return str;
+// };
+// let n = 5;
+// let str = "";
+// for (let i = 1; i <= n; i++) {
+//   str += getStr(i, n);
+//   str += "\n";
+// }
+// console.log(str);
 // // ------------------------- //
 // Two array combine
 // Exercise 24
 // function arrayCombine(ar1,ar2){
 //     let combine = [];
-//     let size1 = ar1.length-1;
-//     let size2 = ar2.length-1;
-//     for(let i=0;i<=size1;i++){
+//     let size1 = ar1.length;
+//     let size2 = ar2.length;
+//     for(let i=0;i<size1;i++){
 //         combine[combine.length] = ar1[i];
 //     }
-
-//     for(let j=0;j<=size2;j++){
+//     for(let j=0;j<size2;j++){
 //         combine[combine.length] = ar2[j];
 //     }
 //     return combine;
@@ -292,24 +322,24 @@
 // checkspeed
 // let dirverPoints = 0;
 // const checkSpeed = function (speed) {
-//   if (speed <= 70) {
+//   if (speed < 75) {
 //     console.log("OK");
-//   }
-//   if (speed > 70) {
+//   } else {
 //     let i = 75;
 //     while (i <= speed) {
 //       dirverPoints += 1;
 //       if (dirverPoints >= 12) {
-//         return `your license is suspended your maximum points reached ${dirverPoints}`;
+//         return console.log(
+//           `your license is suspended your maximum points reached ${dirverPoints}`
+//         );
 //       }
 //       i += 5;
 //     }
+//     console.log(`You get ${dirverPoints} points!`);
 //   }
-//   return dirverPoints;
 // };
 
-// let holder = checkSpeed(130);
-// console.log(holder);
+// checkSpeed(120);
 // __________________________________________ //
 // Exercise 8
 // find truthy value in array
