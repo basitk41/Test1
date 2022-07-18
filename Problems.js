@@ -71,62 +71,62 @@
 // }
 // console.log(output);
 
-const reverseArr = (input) => {
-  const output = [];
-  for (let i = input.length - 1; i >= 0; i--) {
-    output[output.length] = input[i];
-  }
-  return output;
-};
+// const reverseArr = (input) => {
+//   const output = [];
+//   for (let i = input.length - 1; i >= 0; i--) {
+//     output[output.length] = input[i];
+//   }
+//   return output;
+// };
 
-let queue = [];
+// let queue = [];
 
-const push = (value) => {
-  queue[queue.length] = value;
-};
+// const push = (value) => {
+//   queue[queue.length] = value;
+// };
 
-const pop = () => {
-  if (queue.length === 0) return "queue is empty!";
-  const el = queue[0];
-  const newQueue = reverseArr(queue);
-  newQueue.length--;
-  queue = reverseArr(newQueue);
-  return el;
-};
+// const pop = () => {
+//   if (queue.length === 0) return "queue is empty!";
+//   const el = queue[0];
+//   const newQueue = reverseArr(queue);
+//   newQueue.length--;
+//   queue = reverseArr(newQueue);
+//   return el;
+// };
 
-push(1);
-push(2);
-push(3);
-console.log(queue);
-console.log(pop());
-console.log(pop());
-console.log(pop());
-console.log(queue);
-let orignal = [1, 22, 315, 415221, 59182, 612];
+// push(1);
+// push(2);
+// push(3);
+// console.log(queue);
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(queue);
+// let orignal = [1, 22, 315, 415221, 59182, 612];
 
-let reverse = [];
-for (let i = orignal.length - 1; i >= 0; i--) {
-  reverse[reverse.length] = orignal[i];
-}
+// let reverse = [];
+// for (let i = orignal.length - 1; i >= 0; i--) {
+//   reverse[reverse.length] = orignal[i];
+// }
 
-function queueDel() {
-  if (reverse.length === 0) {
-    return "Sorry nothing more to delete";
-  }
-  let popped = reverse[reverse.length - 1];
-  reverse.length--;
-  return popped;
-}
+// function queueDel() {
+//   if (reverse.length === 0) {
+//     return "Sorry nothing more to delete";
+//   }
+//   let popped = reverse[reverse.length - 1];
+//   reverse.length--;
+//   return popped;
+// }
 
-console.log("Popped", queueDel());
-// console.log('reverse',reverse);
-console.log(reverse);
-let orignal_2 = [];
-for (let i = reverse.length - 1; i >= 0; i--) {
-  orignal_2[orignal_2.length] = reverse[i];
-}
+// console.log("Popped", queueDel());
+// // console.log('reverse',reverse);
+// console.log(reverse);
+// let orignal_2 = [];
+// for (let i = reverse.length - 1; i >= 0; i--) {
+//   orignal_2[orignal_2.length] = reverse[i];
+// }
 
-console.log(orignal_2);
+// console.log(orignal_2);
 
 // // Exercise No 1 (swapping of two values) ///
 // let x = 10;
@@ -453,3 +453,39 @@ console.log(orignal_2);
 // }
 // countTruthy(arr);
 // --------------------------------- //
+// array rotate
+
+// function main(arr) {
+//   let last = arr.pop();
+//   arr.reverse();
+//   arr.push(last);
+//   arr.reverse();
+//   console.log(arr);
+// }
+
+let popped,
+  userInput = 3;
+let array = [1, 2, 3, 4, 5, 6, 7];
+let newArray = [];
+
+function reverse(array) {
+  let tempArr = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    tempArr[tempArr.length] = array[i];
+  }
+  return tempArr;
+}
+
+function main(arr, n) {
+  for (let i = 0; i < n; i++) {
+    popped = arr[arr.length - 1];
+    arr.length--;
+    newArray = reverse(arr);
+    newArray[newArray.length] = popped;
+    arr = reverse(newArray);
+  }
+  return arr;
+}
+
+let holder = main(array, userInput);
+console.log(holder);
