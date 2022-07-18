@@ -238,7 +238,6 @@
 //   num = 88;
 // function single(params) {
 //   params = params.toString();
-//   //   params = 16
 //   size = params.length;
 //   temp = 0;
 //   for (let i = 0; i < size; i++) {
