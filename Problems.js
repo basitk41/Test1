@@ -478,6 +478,17 @@
 // }
 // countTruthy(arr);
 // --------------------------------- //
+// function checkPerfectSquare(num) {
+//   let check = Math.sqrt(num);
+//   if (check % 1 === 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// let test = checkPerfectSquare(25);
+// console.log(test);
+// -------------------------------------- //
 // array rotate
 // Exercise 25
 
@@ -559,15 +570,4 @@
 // } else {
 //   console.log(parseInt(year / 100) + 1);
 // }
-
-//
-
-// let checkIntegralNumber = (num) => {
-//   let number = Math.pow(num, 2);
-//   console.log(number);
-//   if (number % 2 === 0) {
-//     return true;
-//   }
-//   return false;
-// };
-// console.log(checkIntegralNumber(25));
+// -----------------------
