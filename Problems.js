@@ -393,22 +393,22 @@
 // ---------------------------------------- //
 // Exercise 21
 // ---------------- Used Recursive function for the first time
-let size, temp;
-function single(params) {
-  params = params.toString();
-  size = params.length;
-  temp = 0;
-  for (let i = 0; i < size; i++) {
-    temp += parseInt(params[i]);
-  }
-  if (temp.toString().length > 1) {
-    single(temp);
-  }
-  return +temp;
-}
+// let size, temp;
+// function single(params) {
+//   params = params.toString();
+//   size = params.length;
+//   temp = 0;
+//   for (let i = 0; i < size; i++) {
+//     temp += parseInt(params[i]);
+//   }
+//   if (temp.toString().length > 1) {
+//     single(temp);
+//   }
+//   return +temp;
+// }
 
-let x = single(88);
-console.log(x);
+// let x = single(88);
+// console.log(x);
 // --------------------------- //
 // Exercise 23
 // Reverse and array or a string
@@ -559,3 +559,15 @@ console.log(x);
 // } else {
 //   console.log(parseInt(year / 100) + 1);
 // }
+
+//
+
+// let checkIntegralNumber = (num) => {
+//   let number = Math.pow(num, 2);
+//   console.log(number);
+//   if (number % 2 === 0) {
+//     return true;
+//   }
+//   return false;
+// };
+// console.log(checkIntegralNumber(25));
