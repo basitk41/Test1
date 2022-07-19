@@ -393,27 +393,22 @@
 // ---------------------------------------- //
 // Exercise 21
 // ---------------- Used Recursive function for the first time
-// let size,
-//   temp = 0,
-//   num = 88;
-// function single(params) {
-//   params = params.toString();
-//   size = params.length;
-//   temp = 0;
-//   for (let i = 0; i < size; i++) {
-//     temp = temp + parseInt(params[i]);
-//   }
-//   temp = temp.toString();
-//   size = temp.length;
-//   if (size > 1) {
-//     single(temp);
-//   }
-//   return temp;
-// }
+let size, temp;
+function single(params) {
+  params = params.toString();
+  size = params.length;
+  temp = 0;
+  for (let i = 0; i < size; i++) {
+    temp += parseInt(params[i]);
+  }
+  if (temp.toString().length > 1) {
+    single(temp);
+  }
+  return +temp;
+}
 
-// let x = single(num);
-// x = parseInt(x);
-// console.log(x);
+let x = single(88);
+console.log(x);
 // --------------------------- //
 // Exercise 23
 // Reverse and array or a string
