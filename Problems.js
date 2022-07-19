@@ -526,3 +526,11 @@
 // let call = checkPalindrome(str);
 // console.log(call);
 // ______________________________________________ //
+// let year = 350;
+// if (year <= 100) {
+//   console.log(1);
+// } else if (year % 100 == 0) {
+//   console.log(year / 100);
+// } else {
+//   console.log(parseInt(year / 100) + 1);
+// }
