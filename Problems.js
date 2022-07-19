@@ -1,3 +1,133 @@
+// // const arr = [];
+
+// // for (var i = 1; i <= 10; i++) {
+// //   var func = (num) => () => console.log(num);
+// //   arr.push(func(i));
+// //   //   arr.push(()=>console.log(i));
+// // }
+
+// // arr.forEach((el) => {
+// //   el();
+// // });
+
+// ///////////////////////////////////////////////
+// // checkAge(age) => age <= 12 => "child" => age >= 12 && age <= 18 => "teenager" => age >= 18 => "adult"
+// // const checkAge = (age) => {
+// //   return age <= 12 ? "child" : age >= 12 && age <= 18 ? "teenager" : "adult";
+// // };
+// // console.log(checkAge(12));
+
+// /////////////////////////////////////////////
+// // stack => FILO => OIFO
+// // queue => FIFO
+
+// // length => stack.length
+// const stack = [];
+// const push = (value) => {
+//   stack[stack.length] = value;
+// };
+// const pop = () => {
+//   if (stack.length === 0) return "stack is empty!";
+//   const el = stack[stack.length - 1];
+//   stack.length--;
+//   return el;
+// };
+// push(1);
+// push(2);
+// push(3);
+// console.log(stack);
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+
+// console.log(stack);
+
+// length => stack.length
+// const stack = [];
+// const push = (value) => {
+//   stack[stack.length] = value;
+// };
+// const pop = () => {
+//   if (stack.length === 0) return "stack is empty!";
+//   const el = stack[stack.length - 1];
+//   stack.length--;
+//   return el;
+// };
+// push(1);
+// push(2);
+// push(3);
+// console.log(stack);
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(stack);
+
+// const input = [1, 2, 6, 3]; // original array
+// const output = []; // output empty array
+// for (let i = input.length - 1; i >= 0; i--) {
+//   output[output.length] = input[i];
+// }
+// console.log(output);
+
+// const reverseArr = (input) => {
+//   const output = [];
+//   for (let i = input.length - 1; i >= 0; i--) {
+//     output[output.length] = input[i];
+//   }
+//   return output;
+// };
+
+// let queue = [];
+
+// const push = (value) => {
+//   queue[queue.length] = value;
+// };
+
+// const pop = () => {
+//   if (queue.length === 0) return "queue is empty!";
+//   const el = queue[0];
+//   const newQueue = reverseArr(queue);
+//   newQueue.length--;
+//   queue = reverseArr(newQueue);
+//   return el;
+// };
+
+// push(1);
+// push(2);
+// push(3);
+// console.log(queue);
+// console.log(pop());
+// console.log(pop());
+// console.log(pop());
+// console.log(queue);
+// let orignal = [1, 22, 315, 415221, 59182, 612];
+
+// let reverse = [];
+// for (let i = orignal.length - 1; i >= 0; i--) {
+//   reverse[reverse.length] = orignal[i];
+// }
+
+// function queueDel() {
+//   if (reverse.length === 0) {
+//     return "Sorry nothing more to delete";
+//   }
+//   let popped = reverse[reverse.length - 1];
+//   reverse.length--;
+//   return popped;
+// }
+
+// console.log("Popped", queueDel());
+// // console.log('reverse',reverse);
+// console.log(reverse);
+// let orignal_2 = [];
+// for (let i = reverse.length - 1; i >= 0; i--) {
+//   orignal_2[orignal_2.length] = reverse[i];
+// }
+
+// console.log(orignal_2);
+
 // // Exercise No 1 (swapping of two values) ///
 // let x = 10;
 // let y = 20;
@@ -263,26 +393,21 @@
 // ---------------------------------------- //
 // Exercise 21
 // ---------------- Used Recursive function for the first time
-// let size,
-//   temp = 0,
-//   num = 88;
+// let size, temp;
 // function single(params) {
 //   params = params.toString();
 //   size = params.length;
 //   temp = 0;
 //   for (let i = 0; i < size; i++) {
-//     temp = temp + parseInt(params[i]);
+//     temp += parseInt(params[i]);
 //   }
-//   temp = temp.toString();
-//   size = temp.length;
-//   if (size > 1) {
+//   if (temp.toString().length > 1) {
 //     single(temp);
 //   }
-//   return temp;
+//   return +temp;
 // }
 
-// let x = single(num);
-// x = parseInt(x);
+// let x = single(88);
 // console.log(x);
 // --------------------------- //
 // Exercise 23
@@ -364,3 +489,85 @@
 // let test = checkPerfectSquare(25);
 // console.log(test);
 // -------------------------------------- //
+// array rotate
+// Exercise 25
+
+// let popped,
+//   userInput = 3;
+// let array = [1, 2, 3, 4, 5, 6, 7];
+// let newArray = [];
+
+// function reverse(array) {
+//   let tempArr = [];
+//   for (let i = array.length - 1; i >= 0; i--) {
+//     tempArr[tempArr.length] = array[i];
+//   }
+//   return tempArr;
+// }
+
+// function main(arr, n) {
+//   for (let i = 0; i < n; i++) {
+//     popped = arr[arr.length - 1];
+//     arr.length--;
+//     newArray = reverse(arr);
+//     newArray[newArray.length] = popped;
+//     arr = reverse(newArray);
+//   }
+//   return arr;
+// }
+
+// let holder = main(array, userInput);
+// console.log(holder);
+// ----------------------------------------------- //
+// xoxoxo progoram
+// Exercise 20
+// let str = "kaxakakak";
+// let size = str.length;
+// let x = "";
+// let o = "";
+// function xoxoChecker(str) {
+//   for (let i = 0; i < size; i++) {
+//     if (str[i].toLowerCase() === "x") {
+//       x += str[i];
+//     } else if (str[i].toLowerCase() === "o") {
+//       o += str[i];
+//     }
+//   }
+//   if (x.length !== o.length) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+// let call = xoxoChecker(str);
+// console.log(call);
+// ------------------------------------------------- //
+// palindrome
+// Exercise 29
+// let str = "abaa",
+//   reverseText = "";
+// function checkPalindrome(text) {
+//   let size = text.length - 1;
+//   for (let i = size; i >= 0; i--) {
+//     reverseText += text[i];
+//   }
+//   if (text === reverseText) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// let call = checkPalindrome(str);
+// console.log(call);
+// ______________________________________________ //
+// let year = 350;
+// if (year <= 100) {
+//   console.log(1);
+// } else if (year % 100 == 0) {
+//   console.log(year / 100);
+// } else {
+//   console.log(parseInt(year / 100) + 1);
+// }
+// -----------------------
