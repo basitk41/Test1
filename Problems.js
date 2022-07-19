@@ -353,3 +353,14 @@
 // }
 // countTruthy(arr);
 // --------------------------------- //
+// function checkPerfectSquare(num) {
+//   let check = Math.sqrt(num);
+//   if (check % 1 === 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// let test = checkPerfectSquare(25);
+// console.log(test);
+// -------------------------------------- //
