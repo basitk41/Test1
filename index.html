@@ -13,7 +13,36 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div id="login" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h1>
+              Login
+            </h1>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" />
+              </div>
+              <div class="form-group">
+                <label for="username">Password</label>
+                <input type="password" class="form-control" id="password" name="password" />
+              </div>
+              <button type="submit" onclick="login()" id="user-login" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content" class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <h1 class="text text-info" style="text-align:left;">Crud App</h1>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-warning" style="margin-top: 25px;" onclick="logout()">Logout</button>
+        </div>
+      </div>
+      <hr>
       <div class="row">
         <div class="col-sm-6">
           <h1>
