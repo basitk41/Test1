@@ -1,5 +1,4 @@
 import { getData, setData, removeData } from "./localStorage.js";
-let id = 1;
 let ID;
 
 window.deleteUser = (id) => {
@@ -19,8 +18,7 @@ window.addUser = () => {
     name.value = "";
     ID = null;
   } else {
-    users.push({ id, name: name.value });
-    id++;
+    users.push({ id: Date.now(), name: name.value });
     name.value = "";
   }
   setData("users", users);
