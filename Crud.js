@@ -76,3 +76,15 @@ const main = () => {
 };
 
 main();
+
+const arr = [
+  { x: "", y: "" },
+  { x: "", y: "" },
+  { x: "", y: "" },
+];
+const arr2 = arr
+  .map((item, i) => [`x${i + 1},y${i + 1}`])
+  .join(",")
+  .split(",");
+
+console.log(arr2);
