@@ -571,3 +571,74 @@
 //   console.log(parseInt(year / 100) + 1);
 // }
 // -----------------------
+//------------------------------------------------//
+// function delayedUpperCase(input, n) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (typeof input === "string") {
+//         resolve(input.toUpperCase());
+//       } else {
+//         reject(input);
+//       }
+//     }, n);
+//   });
+// }
+// const input = "healer";
+// const promise = delayedUpperCase(input, 5000);
+// promise
+//   .then((input) => {
+//     console.log("it is a string " + input);
+//   })
+//   .catch((input) => {
+//     console.log("it is not a string " + input);
+//   });
+
+// --------------------------------------------------//
+// Download
+// Process
+// Execute
+// Solve using callbacks, promises, async/await
+// function downloadFunction(callback) {
+//   setTimeout(function () {
+//     console.log("downloading....");
+//   }, 1000);
+//   setTimeout(function () {
+//     console.log("download complete");
+//   }, 1500);
+//   callback(executeFuntion);
+// }
+
+// function proceessFuntion(callback) {
+//   setTimeout(function () {
+//     console.log("processing...");
+//   }, 2000);
+//   setTimeout(function () {
+//     console.log("processed");
+//   }, 2500);
+//   callback();
+// }
+
+// function executeFuntion() {
+//   setTimeout(function () {
+//     console.log("executing...");
+//   }, 3000);
+//   setTimeout(function () {
+//     console.log("execution complete....");
+//   }, 3500);
+// }
+// downloadFunction(proceessFuntion);
+// // -------------------------------------------- //
+// last exercise
+//let p1 = new Promise(function(resolve,reject){
+//    resolve('hi');
+//});
+//let p2 = new Promise(function(resolve,reject){
+//    resolve('i understand promise a little more'); 
+//});
+//let p3 = new Promise(function(resolve,reject){
+    // reject(':)');
+//    resolve(';)');
+//});
+//Promise.all([p1,p2,p3]).then(function(values) {
+//  console.log(values);
+//});
